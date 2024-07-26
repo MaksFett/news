@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-2 mt-5">
+            <h3>&nbsp;&nbsp;&nbsp;Авторизация</h3>
+        </div>
+        <form class="form-inline" method="POST" id="form">
+            <div class="row justify-content-center">
+                <div class="form-group col-md-2 mx-sm-3 mb-2" id="logindiv">
+                    <label for="InputLogin">Логин</label>
+                    <input name="login" type="text" class="form-control" id="InputLogin" placeholder="Введите логин">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="form-group col-md-2 mx-sm-3 mb-2" id="passworddiv">
+                    <label for="InputPassword">Пароль</label>
+                    <input name="password" type="password" class="form-control" id="InputPassword" placeholder="Введите пароль">
+                </div>
+            </div>
+            <div class="row justify-content-center text-danger" id="error">&nbsp;</div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-primary mx-sm-3 mb-5 col-md-1 mt-2" id="sendbutton">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="{{url_for('static', filename='authorization.js')}}"></script>
+    <div class="row">
+        <div class="col-md-1 mb-5 mt-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 mb-5 mt-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 mb-5 mt-4"></div>
+    </div>
+{% endblock %}
