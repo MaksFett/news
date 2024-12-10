@@ -1,8 +1,7 @@
-from app import app
-
-app.config['JWT_SECRET_KEY'] = 'y82c5goy42c3ur4fx4ugf84xf84g'
-app.config['CORS_HEADERS'] = 'Content-Type'
-
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:42687193@localhost:5432/news"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+JWT_SECRET_KEY = 'y82c5goy42c3ur4fx4ugf84xf84g'
+CORS_HEADERS = 'Content-Type'
+PINECONE_API_KEY = 'pcsk_3cBpbt_8kS8yJ4kLatpAXrmo1GSSfYwZ9hXHavTzFyMKbSKVDjHNKv5kThgESZgEq3CtNZ'
+PINECONE_INDEX_NAME = 'plagiarism-checker'
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:12345@postgres:5432/postgres'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
 
